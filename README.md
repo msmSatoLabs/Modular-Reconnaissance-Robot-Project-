@@ -7,10 +7,8 @@ A modular robotic system designed as a **proof-of-concept** for search and rescu
 **See [MEDIA.md](MEDIA.md) for build photos and testing clips.**
 
 <p align="center">
-  <img width="66%" alt="Assembled modular chassis, top view" src="ocsef/B17090F1-A2D6-41B9-A585-FACF8B59D7A4.JPG"/>
+  <img width="1127" height="782" alt="full robot" src="https://github.com/user-attachments/assets/d462ab23-48e2-430b-90d6-ca2aeaa525f3" />
 </p>
-
-
 
 > **Status:** Prototype completed and field-tested across rocky, sandy, and uneven terrain. Recognized with an Honorable Mention at OCSEF. As a proof-of-concept, it surfaced clear next steps around structural weight and part durability — documented below and driving the current redesign [1][2].
 
@@ -43,13 +41,17 @@ This robot aims to improve SAR efficiency by autonomously navigating dangerous t
 The development moved through three major design phases:
 
 1. **Initial Design (Caltech M4-inspired):** Early concept combined aerial and ground locomotion into one unit, sharing a single battery between driving and flying. This "jack of all trades" approach limited flight time and hurt performance in both domains [2].
-2. **Modular Multi-Robot Approach:** Redesigned into three specialized robots — car, quadruped, drone. Integrating the quadruped proved too complex for the timeline, prompting further refinement [2].
-3. **Final Modular Prototype:** Narrowed to car + drone, each purpose-built and dockable. This simplified the system while preserving combined functionality [2].
-
 <p align="center">
-  <img width="66%" alt="SAR statistics visualized" src="ocsef/FE6210AB-C3C4-46F8-AA01-328C51ADBF15.JPG"/>
-</p>
+<img width="1000" height="667" alt="image" src="https://github.com/user-attachments/assets/9a9b953c-cb70-4899-985d-2e321b29be0d" />
+<p/>
+2. **Modular Multi-Robot Approach:** Redesigned into three specialized robots — car, quadruped, drone. Integrating the quadruped proved too complex for the timeline, prompting further refinement [2].
+<p align="center">
 
+<p/>
+3. **Final Modular Prototype:** Narrowed to car + drone, each purpose-built and dockable. This simplified the system while preserving combined functionality [2].
+<p align="center">
+
+<p/>
 ---
 
 ## Target Specifications
