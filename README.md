@@ -1,267 +1,246 @@
-# Adaptive Modular Search & Rescue Robot for OCSEF
+# Adaptive Modular Search & Rescue Robot Prototype (OCSEF)
 
-A custom-engineered, modular robotic system developed for search and rescue operations. The project explores the design, manufacturing, and integration of coordinated sensor and actuator subsystems—combining a terrain-adaptive chassis and aerial drone—capable of autonomous navigation, real-time hazard/victim detection, and modular deployment in disaster environments [2].
+A modular robotic system designed as a **proof-of-concept** for search and rescue (SAR) operations. This project explores the design, prototyping, and testing of a ground chassis with terrain-adaptive suspension and a drone module for aerial reconnaissance—combining coordinated sensors, modularity, and electromagnetic docking.  
+**Note:** This is a prototype with room for improvement, especially regarding structural integrity and part design, which were found to be bulky and prone to weaknesses [1][2].
 
 <p align="center">
   <img width="66%" alt="Assembled modular chassis, top view" src="ocsef/B17090F1-A2D6-41B9-A585-FACF8B59D7A4.JPG"/>
 </p>
 
-> **Current status:** Mechanical and electrical assembly complete; ground and aerial modules fully integrated and tested for terrain traversal, sensor functionality, and electromagnetic docking. The system achieves up to 10 m/s ground speed and robust modularity for dynamic SAR scenarios [2].
+> **Status:** Prototype completed and tested in field conditions; provided useful insights but is not a final product. Structural weaknesses and bulky components highlighted the need for further refinement [1][2].
+
 ---
+
 ## Project Overview
 
-The OCSEF robot is a **modular SAR system** designed for rapid deployment in hazardous environments, incorporating both ground and aerial mobility.  
-Survival rates in disasters decline rapidly—for example, fire incident survival drops from 75% to 28% after eight minutes; avalanche rescue odds fall from 92% to 30% after 35 minutes [2].  
-Existing SAR robots are often expensive, limited by terrain adaptability, and lack real-time modularity. Our solution is an accessible, adaptable, and robust system focused on practical engineering and testing [2].
+This robot aims to improve SAR efficiency by autonomously navigating dangerous terrain and providing real-time hazard/victim detection. Survival rates in disasters drop quickly (e.g., fire survival falls from 75% to 28% in eight minutes), and current SAR robots are often inefficient, costly, or insufficiently adaptable [2].  
+Our prototype uses accessible hardware and modular design to address these gaps.
 
 <p align="center">
-  <img width="66%" alt="Motivation: SAR statistics visualized" src="ocsef/FE6210AB-C3C4-46F8-AA01-328C51ADBF15.JPG"/>
+  <img width="66%" alt="SAR statistics visualized" src="ocsef/FE6210AB-C3C4-46F8-AA01-328C51ADBF15.JPG"/>
 </p>
 
 ---
+
 ### Target Specifications
 
 <div align="center">
 
-| Specification                | Design Target / Implementation                |
-|------------------------------|:---------------------------------------------|
-| Application                  | Search & rescue                              |
-| Max ground speed             | 10 m/s                                       |
-| Chassis material             | PETG-CF (carbon fiber-infused plastic)        |
-| Suspension                   | Indirect planetary gear, metal CV shafts      |
-| Wheels                       | TPU + rubber                                 |
-| Drone motors                 | Brushless, quad                              |
-| Electromagnetic docking      | Modular, wireless charging                   |
-| Sensors                      | Ultrasonic, IR camera, FFT sound, force      |
-| Main controller              | Raspberry Pi 4 (Ubuntu Linux), Arduino IDE   |
-| Battery                      | LiPo                                         |
-| Camera                       | Pi-compatible IR + object recognition        |
-| Fasteners                    | M3–M6 screws/nuts, metal & nylon             |
-| Bearings                     | Uxcell 10x15x4mm                             |
-| Testing                      | Local park, school, home                     |
+| Specification           | Prototype Implementation                  |
+|-------------------------|:------------------------------------------|
+| Application             | Search & rescue proof-of-concept          |
+| Max ground speed        | ~10 m/s                                   |
+| Chassis material        | PETG-CF (carbon fiber-infused plastic)    |
+| Suspension              | Planetary gear, metal CV shafts           |
+| Wheels                  | TPU + rubber                              |
+| Drone motors            | Brushless, quad propellers                |
+| Electromagnetic docking | Modular, wireless charging                |
+| Sensors                 | Ultrasonic, IR camera, sound, force       |
+| Main controller         | Raspberry Pi 4 (Ubuntu Linux), Arduino    |
+| Battery                 | LiPo                                      |
+| Camera                  | Pi-compatible IR + object recognition     |
+| Fasteners               | M3–M6 screws/nuts, metal & nylon          |
+| Bearings                | Uxcell 10x15x4mm                          |
+| Testing locations       | Local park, school, home                  |
 
 </div>
 
 <p align="center">
-  <img width="33%" alt="Drone subsystem; vertical demonstration" src="ocsef/A0CDC6F8-A694-4190-BF56-B56F8F83567E.JPG"/>
+  <img width="33%" alt="Drone module vertical demonstration" src="ocsef/A0CDC6F8-A694-4190-BF56-B56F8F83567E.JPG"/>
 </p>
 
 ---
+
 # Design Philosophy
 
-The project is guided by several core goals:
-### Adaptability
-Modular design allows the robot to reconfigure for specific rescue needs. Detachable drone and chassis offer ground & aerial navigation [2].
-
-### Toughness & Manufacturability
-Designed and printed with accessible tools and materials (PETG-CF, 3D printing, modular hardware). Suspension and drive use planetary gears for durability and torque distribution [1][2].
-
-### Real-time Data Collection
-Sensor-rich platform gathers hazard and victim information autonomously, relaying live data to SAR teams [2].
-
-### Cost-effectiveness
-Uses readily available components and 3D printing to lower cost, enabling wider deployment [2].
-
-### Engineering Iteration
-Frequent redesign and testing (CAD → 3D print → assembly → test → improve) led to robust planetary suspension, reliable sensor integration, and repeatable modularity [1][2].
+- **Adaptability:** Modular subsystems (chassis + drone) can operate independently or combined [2].
+- **Manufacturability:** 3D-printed PETG-CF and available hardware, accessible for school engineering labs [2].
+- **Iterative Development:** Multiple redesigns to address structural failures, especially in the suspension and motor mounts [1][2].
+- **Room for Improvement:** Prototype bulkiness and mechanical weaknesses need further engineering cycles [1][2].
 
 <p align="center">
   <img width="66%" alt="Chassis integration phase" src="ocsef/7F12A415-A654-4338-AEDE-8F55B8269564.JPG"/>
 </p>
 
 ---
-# System Architecture
+
+# Architecture & Structural Engineering
 
 ## Ground-Based Chassis
-- **Terrain-adaptive suspension:** Refined from initial helical design, now uses planetary gears—high torque, reduced wear, increased durability; indirect motor mounting avoids shaft failure [1].
-- **Modular slot:** For drone docking; integrates electromagnets + wireless charging.
-- **Motors:** DC geared, encoder feedback via Arduino.
-- **Sensors:** Ultrasonic angled for obstacle/victim detection; IR camera for night/thermal hazards; sound sensors processed with FFT.
+
+- Early designs with direct helical motor mounts failed: shafts bent/snapped under torque and impact [1].
+- Planetary gear system added to distribute load across gears, improving durability but making the design bulkier [1].
+- CV joints and bearings used for power transmission and rotation.
 
 <p align="center">
   <img width="33%" alt="Planetary gear pod (vertical orientation)" src="ocsef/4A28B365-6B12-4048-ABA2-2F07FB40368E.JPG"/>
 </p>
 
-## Aerial Drone Module
-- **Quad motors and propellers** for vertical lift.
-- **IR/visible camera** for reconnaissance.
-- **Electromagnet docking:** Secure, power-efficient integration [2].
-- **Independent battery, controller, sensors** for separate operation.
+## Drone Module
+
+- Quad motors with propellers, Pi-compatible camera, ultrasonic sensor.
+- Designed for aerial scouting over debris and out-of-reach areas.
+- Electromagnetic docking for modularity and wireless charging [2].
 
 ---
-# Reduction & Power Transmission
 
-Original helical motor mount failed under torque; direct mounting led to shaft snapping and poor torque distribution.  
-Switch to planetary gear system distributes load across multiple gears, enabling compact and efficient torque transfer for high-speed ground navigation [1].
-
-<p align="center">
-  <img width="66%" alt="Build Process: Sensor mount and wiring" src="ocsef/E6C2E789-D521-4209-8E83-BA2DF915C60C.JPG"/>
-</p>
-
----
 # Materials & Components
 
-|Item            | Qty   | Details                               |
-|----------------|-------|------------------------------------|
-| PETG-CF 3D Print | varies | Frame, chassis, drone            |
-| TPU + rubber     | 4     | Wheels                             |
-| Metal CVD shaft  | 4     | Drive transmission                 |
-| Metal shocks     | 4     | Suspension                         |
-| Motors          | 8     | DC gearmotor (BEMONOC)             |
-| Motor control   | 2     | L298N Dual H-Bridge                |
-| Battery         | 2     | LiPo                               |
-| Camera          | 2     | Pi-compatible, IR auto-switch      |
-| Ultrasonic sensor| 2+    | Obstacle/victim detection          |
-| FFT sound sensor | 1     | Sound analysis                     |
-| Force sensor    | 1+    | Docking/load testing               |
-| Bearings        | varies| Uxcell 10x15x4mm                   |
-| Screws/nuts     | many  | M3/M4/M6, metal/nylon              |
-| Breadboard      | varies| Sensor/electronics integration      |
-| Electromagnet   | 4     | Docking                            |
+| Item             | Qty | Details                            |
+|------------------|-----|-------------------------------------|
+| PETG-CF          | -   | Frame, chassis, drone (3D-printed)  |
+| TPU + rubber     | 4   | Wheels                              |
+| Metal CVD shaft  | 4   | Drive transmission                  |
+| Metal shocks     | 4   | Suspension                          |
+| Motors           | 8   | DC gearmotor (BEMONOC)              |
+| Motor controller | 2   | L298N Dual H-Bridge                 |
+| Battery          | 2   | LiPo                                |
+| Camera           | 2   | Pi-compatible, IR auto-switch       |
+| Ultrasonic sensor| 2+  | Obstacle/victim detection           |
+| Sound sensor     | 1   | FFT calibration                     |
+| Force sensor     | 1+  | Docking/load testing                |
+| Bearings         | -   | Uxcell 10x15x4mm                    |
+| Screws/nuts      | -   | M3/M4/M6, metal/nylon               |
+| Breadboard       | -   | Sensor/electronics integration      |
+| Electromagnet    | 4   | Docking                             |
 
 <p align="center">
   <img width="33%" alt="Assembly section with materials in view" src="ocsef/4A39E4E3-4553-47E2-8F7E-667A52397530.JPG"/>
 </p>
 
 ---
-# Manufacturing & Assembly
+
+# Build & Testing Process
 
 ## CAD & 3D Printing
-- Designed in OnShape, printed in PETG-CF for UV resistance and strength [2].
-- Drone and chassis manufactured at Beckman High School.
 
-## Mechanical Assembly
-- Parts affixed with metal screws, cap nuts, washers for durability and alignment.
-- Bearings installed at all rotational joints for smooth motion.
-- Planetary gear system integrated for power transmission [1].
+- Designed in OnShape, printed with school equipment [2].
+- Bulky parts and difficult alignment exposed limitations in early layouts [1][2].
 
-## Electrical Integration
-- Arduino and Pi control sensors, motors, and transmit real-time data [2].  
-- Encoder wiring and sensor input routed via breadboard and connectors.
+## Mechanical & Electrical Assembly
+
+- Used metal fasteners and bearings for durability.
+- Integrated planetary gears for torque distribution [1].
+- Assembled PCB and sensors with Arduino and Raspberry Pi.
+
+<p align="center">
+  <img width="66%" alt="Sensor mount and wiring" src="ocsef/E6C2E789-D521-4209-8E83-BA2DF915C60C.JPG"/>
+</p>
+
+## Testing
+
+- Evaluated on rocky, sandy, uneven terrain; found weaknesses in structural robustness [1].
+- Drone tested for flight stability and docking reliability; electromagnetic interface worked but further refinement needed [2].
+- Sensor calibration using FFT methods improved detection, but reliability varied [2].
+- Data collected using accelerometers, force sensors, battery monitors [2].
 
 <p align="center">
   <img width="66%" alt="Drone docking demonstration" src="ocsef/85BC9C84-5A49-4E60-B4FA-F81EA42378C2.JPG"/>
 </p>
 
 ---
-# Engineering Challenges
 
-### Suspension
-Direct drive motor mounts were prone to snapping and torque failures, leading to switch to planetary gears.  
-Planetary system provides stability and longer component life under impact [1].
+# Key Engineering Challenges
 
-### Sensor Calibration
-Noise interference in ultrasonic and sound sensors addressed with FFT analysis for improved detection accuracy [2].
-
-### Electromagnetic Docking
-Critical balance of strength and power efficiency; designed to minimize battery drain and enable secure, repeatable module connection [2].
+- **Suspension Integration:** Early mounts snapped under load; planetary gears reduced torque failures but increased size/bulk [1].
+- **Sensor Calibration:** FFT methods increased accuracy but required fine-tuning [2].
+- **Structural Design:** Bulky layouts and poor integration compromised durability; many parts need redesign for strength and space efficiency [1][2].
+- **Docking/Energy:** Electromagnetic system worked, but was power hungry and could be unreliable under some conditions [2].
 
 <p align="center">
-  <img width="66%" alt="Chassis, planetary pods, mechanical assembly" src="ocsef/E6C2E789-D521-4209-8E83-BA2DF915C60C.JPG"/>
+  <img width="66%" alt="Chassis, planetary pods, assembly" src="ocsef/E6C2E789-D521-4209-8E83-BA2DF915C60C.JPG"/>
 </p>
 
 ---
-# Testing & Data Collection
 
-- **Ground module:** Evaluated on rocky, sandy, and uneven terrain for stability and speed.
-- **Drone:** Tested for flight stability, wind resistance, and autonomous docking.
-- **Sensor performance:** Object and sound detection, IR/night vision, force evaluation for electromagnetic coupling.
-- **Battery life:** Monitored during multi-mode operation.
-- **Wireless charging:** Efficiency and reliability tested.
+# Prototype Testing & Data Collected
+
+- **Ground module:** Stable terrain traversal, but structural weaknesses under repeated impact [1].
+- **Drone:** Docking and flight worked in small-scale field tests; further refinements needed [2].
+- **Sensor feedback:** Real-time detection; accuracy varied, room for improvement [2].
+- **Battery life:** Monitored, showed room for optimization [2].
+- **Wireless charging:** Functional, but efficiency and integration could be improved [2].
 
 <p align="center">
-  <img width="66%" alt="Subassembly: Chassis integration/top down" src="ocsef/7F12A415-A654-4338-AEDE-8F55B8269564.JPG"/>
+  <img width="66%" alt="Chassis integration, top-down" src="ocsef/7F12A415-A654-4338-AEDE-8F55B8269564.JPG"/>
 </p>
 
 ---
-# Results & Findings
 
-- Robust terrain traversal, suspension absorbs shocks effectively up to 10 m/s [2].
-- Real-time sensor feedback delivers accurate hazard and victim detection [2].
-- Electromagnetic docking is reliable, with drone able to re-dock autonomously if detached [2].
-- Modular adaptability allows flexible deployment in varying SAR scenarios.
-- Cost-effective fabrication supports scalability and field deployment.
+# Results & Areas to Improve
+
+- **Proof-of-concept:** Traversed rough terrain, managed modular docking, collected sensor data [2].
+- **Limitations:** Structural integrity, component bulk, and sensor reliability need much refinement.  
+- **Iterative Design Required:** Future versions must focus on reducing bulk, increasing strength, optimizing electronics, and extending battery life [1][2].
 
 <p align="center">
-  <img width="33%" alt="Assembly details; vertical orientation" src="ocsef/492F5B14-A730-4B9D-9CEE-6A882FFA2FEE.JPG"/>
+  <img width="33%" alt="Assembly detail; vertical orientation" src="ocsef/492F5B14-A730-4B9D-9CEE-6A882FFA2FEE.JPG"/>
 </p>
 
 ---
+
 # Future Development
 
-- **Enhanced AI Integration:** Machine learning modules for automated hazard/victim detection.
-- **Extended Battery Life:** Exploration of solar/kinetic energy harvesting.
-- **New Attachments:** Water drones, IR cameras for fire/wildlife scenarios, ground rescue pods.
-- **Real SAR Testing:** Collaboration with emergency response teams for deployment trials [2].
+- **Structural Redesign:** Lighter, stronger, and less bulky chassis and mounts.
+- **Advanced Integration:** Streamlined electronics and sensors for improved reliability.
+- **AI/Automated Control:** Implement smarter hazard/victim detection.
+- **Battery Optimization:** Explore solar/kinetic harvesting.
+- **New Attachments:** Flood/fire modules, additional sensing [2].
 
 <p align="center">
   <img width="66%" alt="Future modular attachment planning" src="ocsef/A7AC316B-0769-4655-AE26-0070581A88D2.JPG"/>
 </p>
 
 ---
+
 # Project Timeline
 
-## 1. Concept & Design
-- Identified SAR needs and rapid survival drop-off [2].
-- Designed modular platform using CAD modeling and planetary suspension [1][2].
+## Concept & Design
+- Identified need for rapid SAR deployment and terrain adaptability [2]; designed initial chassis, drone, and docking system [1].
 
-## 2. Initial Prototyping
-- Printed, assembled, and iterated through multiple chassis and drone designs [2].
-- Developed electromagnetic docking and sensor arrays.
+## Prototyping & Iteration
+- Printed, assembled, and tested multiple versions; frequent redesigns to improve robustness and reduce failures [1][2].
 
-## 3. Integration & Assembly
-- Mechanical-complete, electronics installed, system tested on multiple terrains.
-
-## 4. Testing & Iteration
-- Evaluated suspension, docking, sensor data, battery life, and modular adaptability.
+## Integration & Field Testing
+- Combined modules, tested in school/home/local park; documented structural, sensor, and battery performance [2].
 
 <p align="center">
   <img width="33%" alt="Project collaborators and workspace" src="ocsef/3D04DFF2-302E-4154-96CE-2302DD2F556F.JPG"/>
 </p>
 
 ---
+
 # Skills Demonstrated
 
-### Mechanical/Structural Engineering
-* CAD & planetary gear design [1]
-* Bearing and torque analysis
-* Modular interface engineering
-
-### Manufacturing
-* FDM 3D printing, post-processing, assembly
-
-### Electrical & Controls
-* Arduino & Pi integration
-* Sensor calibration (FFT)
-* Electromagnetic actuation
-
-### Robotics
-* Terrain adaptive mobility
-* Modular autonomous deployment
-* Real-time SAR data collection
+- CAD & mechanical design of planetary suspension
+- 3D printing and hands-on assembly
+- Sensor integration and FFT calibration
+- Modular hardware/electronics development
+- Iterative engineering and troubleshooting
 
 ---
+
 # Project Status
 
-**Mechanical/Electrical prototype: COMPLETE**  
-**Sensor & docking integration: COMPLETE**  
-**Modular deployment: TESTED**  
-**Experimental characterization: IN PROGRESS**  
-**Field testing: IN PROGRESS**
+**Prototype:** Built and tested; not deployment-ready  
+**Major Issues:** Structural bulkiness, critical weakness under load, sensor consistency  
+**Future Plans:** Redesign, optimize, further testing
 
 ---
+
 # References
 
-* OCSEF_LOG.pptx [1]
-* OCSEF.docx [2]
-* GitHub Source: https://github.com/open-dynamic-robot-initiative/open_robot_actuator_hardware  
-* Design Paper: https://arxiv.org/pdf/1910.00093
+- OCSEF_LOG.pptx [1]
+- OCSEF.docx [2]
+- Design Paper: https://arxiv.org/pdf/1910.00093
+- GitHub Source: https://github.com/open-dynamic-robot-initiative/open_robot_actuator_hardware
 
 ---
+
 # License
 
 Include your preferred open-source license or statement here.
 
 ---
 
-**Media & video demonstration: See MEDIA.md for detailed deployment and field trial videos!**
+**See MEDIA.md for photos and testing clips!**
