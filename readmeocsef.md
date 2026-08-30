@@ -1,6 +1,6 @@
 # Adaptive Modular Search & Rescue Robot Prototype (OCSEF)
 
-**🏅 Honorable Mention — Orange County Science & Engineering Fair (OCSEF)**
+**Honorable Mention — Orange County Science & Engineering Fair (OCSEF)**
 
 A modular robotic system designed as a **proof-of-concept** for search and rescue (SAR) operations. This project explores the design, prototyping, and testing of a ground chassis with terrain-adaptive suspension and a drone module for aerial reconnaissance — combining coordinated sensors, modularity, and electromagnetic docking.
 
