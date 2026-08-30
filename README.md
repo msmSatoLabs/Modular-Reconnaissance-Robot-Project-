@@ -4,11 +4,13 @@
 
 A modular robotic system designed as a **proof-of-concept** for search and rescue (SAR) operations. This project explores the design, prototyping, and testing of a ground chassis with terrain-adaptive suspension and a drone module for aerial reconnaissance — combining coordinated sensors, modularity, and electromagnetic docking.
 
-📺 **See [MEDIA.md](MEDIA.md) for build photos and testing clips.**
+**See [MEDIA.md](MEDIA.md) for build photos and testing clips.**
 
 <p align="center">
   <img width="66%" alt="Assembled modular chassis, top view" src="ocsef/B17090F1-A2D6-41B9-A585-FACF8B59D7A4.JPG"/>
 </p>
+
+
 
 > **Status:** Prototype completed and field-tested across rocky, sandy, and uneven terrain. Recognized with an Honorable Mention at OCSEF. As a proof-of-concept, it surfaced clear next steps around structural weight and part durability — documented below and driving the current redesign [1][2].
 
