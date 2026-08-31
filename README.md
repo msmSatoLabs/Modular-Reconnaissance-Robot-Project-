@@ -12,7 +12,7 @@ A modular robotic system designed as a **proof-of-concept** for search and rescu
 
 > **Status:** Prototype completed and field-tested across rocky, sandy, and uneven terrain. Recognized with an Honorable Mention at OCSEF. As a proof-of-concept, it surfaced clear next steps around structural weight and part durability — documented below and driving the current redesign [1][2].
 
-**Team:** Built with one partner. I led **CAD, mechanical part design, and assembly** (chassis, suspension, planetary gear pods, docking hardware). My partner led **sensor selection/integration and onboard programming** (Raspberry Pi/Arduino, FFT sensor calibration, detection software).
+**Team:** Built with one partner. I led **CAD, mechanical part design, manufacturing, and assembly** (chassis, suspension, planetary gear pods, docking hardware). My partner led **sensor selection/integration and onboard programming** (Raspberry Pi/Arduino, FFT sensor calibration, detection software).
 
 ---
 
@@ -40,7 +40,7 @@ This robot aims to improve SAR efficiency by autonomously navigating dangerous t
 
 The development moved through three major design phases:
 
-1. **Initial Design (Caltech M4-inspired):** Early concept combined aerial and ground locomotion into one unit, sharing a single battery between driving and flying. This "jack of all trades" approach limited flight time and hurt performance in both domains [2].
+1. **Initial Design Concept(Caltech M4-inspired):** Early concept combined aerial and ground locomotion into one unit, sharing a single battery between driving and flying. This "jack of all trades" approach limited flight time and hurt performance in both domains [2].
 <p align="center">
 <img width="1000" height="667" alt="image" src="https://github.com/user-attachments/assets/9a9b953c-cb70-4899-985d-2e321b29be0d" />
 <p/>
