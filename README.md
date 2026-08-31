@@ -105,8 +105,8 @@ The development moved through three major design phases:
 - **Manufacturability:** 3D-printed PETG/PETG-CF and off-the-shelf hardware, accessible for a school engineering lab [2].
 - **Iterative Development:** Multiple redesign cycles targeting structural failures, particularly in the suspension and motor mounts [1][2].
 
-<img width="510" height="285" alt="image" src="https://github.com/user-attachments/assets/ed4a5304-a841-4ffa-8525-13298553807b" />
-<img width="490" height="268" alt="image" src="https://github.com/user-attachments/assets/42e93869-031b-4f4d-8485-c898305b40e6" />
+<img width="1436" height="887" alt="image" src="https://github.com/user-attachments/assets/0176651f-dcb0-44d6-a7fd-224df04b25c9" />
+<img width="967" height="786" alt="image" src="https://github.com/user-attachments/assets/18b7f62a-dab3-4bdf-be3b-f148c7f66baa" />
 
 
 ---
