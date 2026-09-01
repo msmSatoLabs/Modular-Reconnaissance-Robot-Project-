@@ -6,7 +6,7 @@
 
 **Problem Statement:** Mitigate the risks and logistical challenges associated with search and rescue operations in hazardous and structurally compromised environments.
 
-A modular robotic system designed as a **proof-of-concept** for search and rescue (SAR) operations. The project explores the design, prototyping, and testing of a ground chassis with terrain-adaptive suspension and a drone module for aerial reconnaissance — combining coordinated sensors, modularity, and electromagnetic docking.
+A modular robotic system designed as a **proof-of-concept** for search and rescue (SAR) operations. The project explores the design, prototyping, and testing of a ground chassis with terrain-adaptive suspension and a drone module for aerial reconnaissance, combining coordinated sensors, modularity, and electromagnetic docking.
 
 Many existing SAR robots take a "jack of all trades, master of none" approach — integrating too many components to handle every scenario, which makes them bulky, inefficient, and often suboptimal for any single task. This robot instead adapts its configuration to the specific rescue environment: if terrain is impassable by ground, the drone module detaches for aerial reconnaissance; if aerial reconnaissance isn't needed, all power is directed to terrain navigation. This situational adaptability is intended to make the system more effective in real-world rescue operations.
 
@@ -17,9 +17,9 @@ Many existing SAR robots take a "jack of all trades, master of none" approach �
 </p>
 <p align="center"><em>Assembled search-and-rescue robot, ground chassis and drone module.</em></p>
 
-> **Status:** Prototype completed and field-tested across rocky, sandy, and uneven terrain. Recognized with an Honorable Mention at OCSEF. As a proof-of-concept, it surfaced clear next steps around structural weight and part durability — documented below and driving the current redesign.
+> **Status:** Prototype completed and field-tested across rocky, sandy, and uneven terrain. Recognized with an Honorable Mention at OCSEF. As a proof-of-concept, it surfaced clear next steps around structural weight and part durability documented below and driving the next redesign.
 
-**Team:** Developed by a two-person team — Matthew Sato and Rohan Hablani — at Arnold O. Beckman High School (Teacher: Claudia Le). Sato led CAD, mechanical part design, manufacturing, and assembly (chassis, suspension, planetary gear pods, docking hardware). Hablani led sensor selection/integration and onboard programming (Raspberry Pi/Arduino, FFT sensor calibration, detection software).
+**Team:** Developed by a two-person team (Matthew Sato and Rohan Hablani). Sato led CAD, mechanical part design, manufacturing, and assembly (chassis, suspension, planetary gear pods, docking hardware). Hablani led sensor selection/integration and onboard programming (Raspberry Pi/Arduino, FFT sensor calibration, detection software).
 
 ---
 
@@ -61,9 +61,10 @@ Each module was designed with CAD/CAM: a ground-based chassis with suspension fo
 Search and rescue (SAR) operations face challenges that reduce efficiency and increase risk. Delays in locating victims drastically lower survival chances — survival in fire incidents drops from 75% to 28% after eight minutes, and in avalanche cases, chances fall from 92% to 30% after 35 minutes, approaching zero at two hours (Rauch et al., 2024). In mountain rescue operations, survival rate upon arrival of rescue teams is only 3.5% (Oshiro & Murakami, 2022). Rescue workers face high risk themselves, with trauma the leading cause of death and roughly 10% experiencing post-traumatic stress disorder (PMC, 2022).
 
 <p align="center">
-  <img width="66%" alt="Fig 1. Search and rescue helicopter" src="media/fig1-sar-helicopter.jpg" />
+  <img width="678" height="452" alt="image" src="https://github.com/user-attachments/assets/7719c9ff-a278-4e6c-9ae9-8adfb649c327" />
 </p>
-<p align="center"><em>Fig 1. Search and rescue helicopter (placeholder — source image from presentation not yet uploaded to repo).</em></p>
+<p align="center"><em>Fig 1. Search and rescue helicopter
+</em></p>
 
 Current robotic SAR solutions struggle with terrain adaptability, high cost, and limited versatility, underscoring the need for a system that can navigate complex terrain, reduce rescuer risk, and improve SAR operations.
 
@@ -90,19 +91,22 @@ The development moved through three major design phases:
 Early concept combined aerial and ground locomotion into one unit, sharing a single battery between driving and flying. This "jack of all trades" approach limited flight time and hurt performance in both domains.
 
 <p align="center">
-  <img width="33%" alt="Early concept sketch: combined aerial-ground locomotion unit" src="https://github.com/user-attachments/assets/0b0c433c-c9c3-4324-b948-07eeff0f06b5" />
-</p>
-<p align="center"><em>Early concept sketch — combined aerial-ground locomotion unit. (Caption inferred from surrounding context — please verify.)</em></p>
-
-<p align="center">
   <img width="33%" alt="Early concept sketch: integrated propeller-wheel design" src="https://github.com/user-attachments/assets/862cbe90-e2a1-4213-a597-00bf147b056e" />
 </p>
-<p align="center"><em>Early concept sketch — integrated propeller-wheel design. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Early concept sketch — combined aerial-ground locomotion unit.
+</em></p>
+
+<p align="center">
+  <img width="33%" alt="Early concept sketch: combined aerial-ground locomotion unit" src="https://github.com/user-attachments/assets/0b0c433c-c9c3-4324-b948-07eeff0f06b5" />
+</p>
+<p align="center"><em>Early concept sketch — integrated propeller-wheel design.
+</em></p>
 
 <p align="center">
   <img width="66%" alt="Early prototype iteration of the combined chassis-drone unit" src="https://github.com/user-attachments/assets/afe30da5-999b-4369-a589-cb968232d16b" />
 </p>
-<p align="center"><em>Early prototype iteration of the combined chassis-drone unit. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Early prototype iteration of the combined chassis-drone unit.
+</em></p>
 
 <p align="center">
   <img width="66%" alt="Early design with built-in propellers inside the wheels" src="https://github.com/user-attachments/assets/9a9b953c-cb70-4899-985d-2e321b29be0d" />
