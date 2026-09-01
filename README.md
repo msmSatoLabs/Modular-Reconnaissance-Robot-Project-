@@ -185,7 +185,8 @@ Narrowed to car + drone, each purpose-built and dockable. This simplified the sy
 <p align="center">
   <img width="66%" alt="Chassis and drone modules, side by side" src="https://github.com/user-attachments/assets/93132a63-4a3b-4536-9777-8a8c42d2419b" />
 </p>
-<p align="center"><em>Chassis and drone modules, side by side. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Chassis and drone modules combined
+</em></p>
 
 ---
 
@@ -198,12 +199,12 @@ Narrowed to car + drone, each purpose-built and dockable. This simplified the sy
 <p align="center">
   <img width="66%" alt="Modular subsystem breakdown" src="https://github.com/user-attachments/assets/0176651f-dcb0-44d6-a7fd-224df04b25c9" />
 </p>
-<p align="center"><em>Modular subsystem breakdown — chassis and drone operating independently. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>pic of wheel and suspension arms with planetary gearbox and motor</em></p>
 
 <p align="center">
   <img width="66%" alt="3D-printed PETG/PETG-CF components" src="https://github.com/user-attachments/assets/18b7f62a-dab3-4bdf-be3b-f148c7f66baa" />
 </p>
-<p align="center"><em>3D-printed PETG/PETG-CF components prior to assembly. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>top view of suspension arms with wheels, mounted on robot</em></p>
 
 ---
 
@@ -212,9 +213,9 @@ Narrowed to car + drone, each purpose-built and dockable. This simplified the sy
 The prototype integrates ultrasonic sensors for terrain mapping, a camera for real-time visual data, and additional environmental sensors to monitor conditions such as gas levels or temperature. These sensors let the robot navigate difficult terrain, access confined spaces, and gather data about its surroundings in scenarios where human responders would be inefficient or unable to operate. The CAD design emphasizes an integrated structure — each suspension arm attaches directly to the base, which houses electronics and facilitates docking.
 
 <p align="center">
-  <img width="66%" alt="Fig 2-6. Final CAD rendering and 3D-printed chassis" src="media/fig2-6-cad-chassis.jpg" />
+empty, insert pic of cad
 </p>
-<p align="center"><em>Fig 2–6. Final CAD rendering and 3D-printed chassis (placeholder — source images from presentation not yet uploaded to repo).</em></p>
+<p align="center"><em>Fig 2–6. Final CAD rendering and 3D-printed chassis</em></p>
 
 ### Ground-Based Chassis
 
@@ -223,22 +224,17 @@ Early designs with direct motor mounts failed — shafts bent or snapped under t
 <p align="center">
   <img width="66%" alt="Direct motor mount design, early iteration" src="https://github.com/user-attachments/assets/1b050f92-5261-4c66-afc5-398e476bace4" />
 </p>
-<p align="center"><em>Direct motor mount design, early iteration. (Caption inferred from surrounding context — please verify.)</em></p>
-
-<p align="center">
-  <img width="66%" alt="Planetary gear system integrated into chassis motor mount" src="https://github.com/user-attachments/assets/01cc31bc-ce2e-4d43-a5d2-fa148ffe99fe" />
-</p>
-<p align="center"><em>Planetary gear system integrated into chassis motor mount. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>pic of planetary gearbox</em></p>
 
 <p align="center">
   <img width="66%" alt="CV joint and bearing assembly" src="https://github.com/user-attachments/assets/25dcd6f4-47c9-44f4-8ee5-9c5d5d830f48" />
 </p>
-<p align="center"><em>CV joint and bearing assembly for power transmission. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>front view of suspension arms and wheel, planetary gearbox hub and motor mount in view</em></p>
 
 <p align="center">
   <img width="66%" alt="Chassis suspension assembly, close-up" src="https://github.com/user-attachments/assets/ae7d2a26-2ad1-4cb0-8c16-e282f1f8b87f" />
 </p>
-<p align="center"><em>Chassis suspension assembly, close-up. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>chassis motor with gear on shaft</em></p>
 
 <p align="center">
   <img width="66%" alt="Motor box assembly with planetary gear housing" src="https://github.com/user-attachments/assets/8bfbfd5d-9cb4-4b7d-b1ff-4e08c0c16f81" />
