@@ -156,7 +156,7 @@ Narrowed to car + drone, each purpose-built and dockable. This simplified the sy
 | Specification             | Prototype Implementation                                   |
 |----------------------------|:-------------------------------------------------------------|
 | Application                | Search & rescue proof-of-concept                             |
-| Ground speed               | ~10 m/s operational (up to ~17 m/s unloaded top speed)       |
+| Ground speed               | ~1.0 m/s operational (up to ~1.7 m/s unloaded top speed)       |
 | Chassis material           | PETG / PETG-CF (carbon fiber-infused plastic)                |
 | Suspension                 | OGRC oil shock absorbers (multi-terrain)                     |
 | Wheels                     | TPU + rubber                                                  |
