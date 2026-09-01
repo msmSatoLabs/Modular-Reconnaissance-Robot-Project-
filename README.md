@@ -93,39 +93,41 @@ Early concept combined aerial and ground locomotion into one unit, sharing a sin
 <p align="center">
   <img width="33%" alt="Early concept sketch: integrated propeller-wheel design" src="https://github.com/user-attachments/assets/862cbe90-e2a1-4213-a597-00bf147b056e" />
 </p>
-<p align="center"><em>Early concept sketch — combined aerial-ground locomotion unit.
+<p align="center"><em>Early concept sketch of the combined aerial-ground locomotion unit.
 </em></p>
 
 <p align="center">
   <img width="33%" alt="Early concept sketch: combined aerial-ground locomotion unit" src="https://github.com/user-attachments/assets/0b0c433c-c9c3-4324-b948-07eeff0f06b5" />
 </p>
-<p align="center"><em>Early concept sketch — integrated propeller-wheel design.
+<p align="center"><em>Early concept sketch of the integrated propeller-wheel design.
 </em></p>
 
 <p align="center">
   <img width="66%" alt="Early prototype iteration of the combined chassis-drone unit" src="https://github.com/user-attachments/assets/afe30da5-999b-4369-a589-cb968232d16b" />
 </p>
-<p align="center"><em>Early prototype iteration of the combined chassis-drone unit.
+<p align="center"><em>Early concept sketch of the combined chassis-drone unit.
 </em></p>
 
 <p align="center">
   <img width="66%" alt="Early design with built-in propellers inside the wheels" src="https://github.com/user-attachments/assets/9a9b953c-cb70-4899-985d-2e321b29be0d" />
 </p>
-<p align="center"><em>Early design included built-in propellers inside the wheels, similar to Caltech's <a href="https://www.caltech.edu/about/news/new-bioinspired-robot-flies-rolls-walks-and-more">M4 robot</a>.</em></p>
+<p align="center"><em>Early design took inspiration from Caltech's <a href="https://www.caltech.edu/about/news/new-bioinspired-robot-flies-rolls-walks-and-more">M4 robot</a>.</em></p>
 
 ### 2. Modular Multi-Robot Approach
 
 Redesigned into three specialized robots: a car, a quadruped, and a drone. Integrating the quadruped proved too complex for the timeline, prompting further refinement.
 
 <p align="center">
-  <img width="66%" alt="Second iteration: three-robot modular concept" src="https://github.com/user-attachments/assets/ef1550b7-22bb-4f3c-ac2d-b031c644b8ce" />
+    <img width="33%" alt="Quadruped module concept" src="https://github.com/user-attachments/assets/41f5edea-54b0-48dd-aa1a-2a9d8ff5253d" />
 </p>
-<p align="center"><em>Second iteration — three-robot modular concept (car, quadruped, drone). (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Second iteration — three-robot modular concept (car, quadruped, drone)
+</em></p>
 
 <p align="center">
-  <img width="33%" alt="Quadruped module concept" src="https://github.com/user-attachments/assets/41f5edea-54b0-48dd-aa1a-2a9d8ff5253d" />
+  <img width="66%" alt="Second iteration: three-robot modular concept" src="https://github.com/user-attachments/assets/ef1550b7-22bb-4f3c-ac2d-b031c644b8ce" />
 </p>
-<p align="center"><em>Quadruped module concept, later dropped due to integration complexity. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Quadruped module concept, later dropped due to integration complexity.
+</em></p>
 
 ### 3. Final Modular Prototype
 
@@ -134,22 +136,18 @@ Narrowed to car + drone, each purpose-built and dockable. This simplified the sy
 <p align="center">
   <img width="66%" alt="Final modular prototype: car and drone configuration" src="https://github.com/user-attachments/assets/56b2c632-443e-4ae2-b2d7-666a3e1d2897" />
 </p>
-<p align="center"><em>Final modular prototype — car and drone configuration. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Initial Suspension system utilizing RC Car shocks</em></p>
 
 <p align="center">
   <img width="33%" alt="Final chassis assembly, side view" src="https://github.com/user-attachments/assets/ae7a85e9-8519-47f6-8cc7-605540c9b65c" />
 </p>
-<p align="center"><em>Final chassis assembly, side view. (Caption inferred from surrounding context — please verify.)</em></p>
-
-<p align="center">
-  <img width="66%" alt="Docking interface detail" src="https://github.com/user-attachments/assets/a8a0240a-e48e-4f79-b96b-590494d21161" />
-</p>
-<p align="center"><em>Docking interface detail. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Final chassis sketch, Top and front view
+</em></p>
 
 <p align="center">
   <img width="66%" alt="Drone module attached to chassis via electromagnetic dock" src="https://github.com/user-attachments/assets/2e6b9860-916d-470f-ac26-a5d42a800c33" />
 </p>
-<p align="center"><em>Drone module attached to chassis via electromagnetic dock. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Sketch of CV Joint and suspension system</em></p>
 
 ---
 
