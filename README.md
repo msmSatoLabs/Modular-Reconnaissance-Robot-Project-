@@ -180,7 +180,7 @@ Narrowed to car + drone, each purpose-built and dockable. This simplified the sy
 <p align="center">
   <img width="66%" alt="Assembled robot specification overview" src="https://github.com/user-attachments/assets/b3386e32-9cca-45df-a608-4c15a06aacd3" />
 </p>
-<p align="center"><em>Assembled robot, specification overview. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Components of Car module</em></p>
 
 <p align="center">
   <img width="66%" alt="Chassis and drone modules, side by side" src="https://github.com/user-attachments/assets/93132a63-4a3b-4536-9777-8a8c42d2419b" />
