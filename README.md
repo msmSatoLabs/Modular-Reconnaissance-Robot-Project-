@@ -1,4 +1,4 @@
-# Adaptive Modular Search & Rescue Robot Prototype (OCSEF)
+# Adaptive Modular Search & Rescue Robot Prototype (OCSEF Project)
 
 **Honorable Mention — Orange County Science & Engineering Fair (OCSEF)**
 
