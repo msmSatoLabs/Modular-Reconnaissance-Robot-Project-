@@ -10,7 +10,7 @@ A modular robotic system designed as a **proof-of-concept** for search and rescu
 
 Many existing SAR robots take a "jack of all trades, master of none" approach — integrating too many components to handle every scenario, which makes them bulky, inefficient, and often suboptimal for any single task. This robot instead adapts its configuration to the specific rescue environment: if terrain is impassable by ground, the drone module detaches for aerial reconnaissance; if aerial reconnaissance isn't needed, all power is directed to terrain navigation. This situational adaptability is intended to make the system more effective in real-world rescue operations.
 
-📺 **See [MEDIA.md](MEDIA.md) for build photos and testing clips.**
+📺 **See [MEDIA.md](MEDIA.md) if you only want to see the pictures (everything in this md file is from my project submission)**
 
 <p align="center">
   <img width="66%" alt="Assembled search-and-rescue robot: ground chassis and drone module" src="https://github.com/user-attachments/assets/d462ab23-48e2-430b-90d6-ca2aeaa525f3" />
@@ -199,12 +199,12 @@ Narrowed to car + drone, each purpose-built and dockable. This simplified the sy
 <p align="center">
   <img width="66%" alt="Modular subsystem breakdown" src="https://github.com/user-attachments/assets/0176651f-dcb0-44d6-a7fd-224df04b25c9" />
 </p>
-<p align="center"><em>pic of wheel and suspension arms with planetary gearbox and motor</em></p>
+<p align="center"><em>Wheel, suspension, planetary gearbox reduction, and motor assembly</em></p>
 
 <p align="center">
   <img width="66%" alt="3D-printed PETG/PETG-CF components" src="https://github.com/user-attachments/assets/18b7f62a-dab3-4bdf-be3b-f148c7f66baa" />
 </p>
-<p align="center"><em>top view of suspension arms with wheels, mounted on robot</em></p>
+<p align="center"><em>top view of suspension arms with wheel and CVD shaft inside</em></p>
 
 ---
 
@@ -220,11 +220,15 @@ empty, insert pic of cad
 ### Ground-Based Chassis
 
 Early designs with direct motor mounts failed — shafts bent or snapped under torque and impact. The chassis was redesigned around a planetary gear system to distribute load across multiple gears, trading some compactness for durability. CV joints and bearings handle power transmission and rotation.
-
+<p align="center">
+  <img width="597" height="372" alt="image" src="https://github.com/user-attachments/assets/c5fdf123-3dff-4802-a37a-d0d148942d10" />
+</p>
+<p align="center"><em>initial design where gear insert would connect to CVD shaft, but broke too easily</em></p>
+  
 <p align="center">
   <img width="66%" alt="Direct motor mount design, early iteration" src="https://github.com/user-attachments/assets/1b050f92-5261-4c66-afc5-398e476bace4" />
 </p>
-<p align="center"><em>pic of planetary gearbox</em></p>
+<p align="center"><em>pic of planetary gearbox (enclosed by outer ring)</em></p>
 
 <p align="center">
   <img width="66%" alt="CV joint and bearing assembly" src="https://github.com/user-attachments/assets/25dcd6f4-47c9-44f4-8ee5-9c5d5d830f48" />
@@ -239,27 +243,27 @@ Early designs with direct motor mounts failed — shafts bent or snapped under t
 <p align="center">
   <img width="66%" alt="Motor box assembly with planetary gear housing" src="https://github.com/user-attachments/assets/8bfbfd5d-9cb4-4b7d-b1ff-4e08c0c16f81" />
 </p>
-<p align="center"><em>Motor box assembly with planetary gear housing. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Motor box assembly with planetary gear housing</em></p>
 
 <p align="center">
   <img width="66%" alt="Wheel and CV joint connection" src="https://github.com/user-attachments/assets/3497c9a1-c978-433f-9d14-02a94913ce24" />
 </p>
-<p align="center"><em>Wheel and CV joint connection. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Planetary and Sun gear casing</em></p>
 
 <p align="center">
   <img width="33%" alt="Suspension arm, isolated view" src="https://github.com/user-attachments/assets/bd696f8b-01f6-41e3-bb23-786c174d18c9" />
 </p>
-<p align="center"><em>Suspension arm, isolated view. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Ring Gear hub (upside down to see internal teeth). The other side of the gear has an area to hold the CVD shaft with a screw</em></p>
 
 <p align="center">
   <img width="66%" alt="Assembled chassis underside" src="https://github.com/user-attachments/assets/fd568181-77c4-40b3-9267-e55baadd7fb4" />
 </p>
-<p align="center"><em>Assembled chassis underside. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Planetary and Sun gears (sun gear is directly driven by the motor)</em></p>
 
 <p align="center">
   <img width="66%" alt="Fully assembled ground chassis" src="https://github.com/user-attachments/assets/45fad5c4-1471-4125-b71c-9dbe7780015b" />
 </p>
-<p align="center"><em>Fully assembled ground chassis. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Planetary and Sun gear casing screwed on top of gear mounted using M3 cap nuts</em></p>
 
 ### Drone Module
 
@@ -289,11 +293,6 @@ Quad brushless motors with propellers, a Pi-compatible camera, and an ultrasonic
 | **Total prototype cost**       |                    |          |                  | **~$433.74**  |                                    |
 
 </div>
-
-<p align="center">
-  <img width="33%" alt="Assembly section with materials in view" src="ocsef/4A39E4E3-4553-47E2-8F7E-667A52397530.JPG"/>
-</p>
-<p align="center"><em>Assembly section with materials in view.</em></p>
 
 ---
 
@@ -336,22 +335,22 @@ Designed in Onshape, printed with school equipment. Bulky parts and tight tolera
 <p align="center">
   <img width="66%" alt="OnShape CAD model of the chassis" src="https://github.com/user-attachments/assets/9d023fa4-b840-4818-9a73-b365da0d3fcd" />
 </p>
-<p align="center"><em>Onshape CAD model of the chassis. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Onshape CAD model of the planetary gearbox</em></p>
 
 <p align="center">
   <img width="66%" alt="3D print in progress on the Bambu Lab P1S" src="https://github.com/user-attachments/assets/1f2e843e-37ab-44cc-a543-a1332eb0baad" />
 </p>
-<p align="center"><em>3D print in progress on the Bambu Lab P1S. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Full CAD model of the modular robot</em></p>
 
 <p align="center">
   <img width="66%" alt="Printed PETG-CF components after support removal" src="https://github.com/user-attachments/assets/754fad82-50c8-4a0a-bf3c-90ff18ef8fae" />
 </p>
-<p align="center"><em>Printed PETG-CF components after support removal. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Full CAD model of the Planetary gearbox, motor mount, suspension arms, and castor block for the wheel</em></p>
 
 <p align="center">
   <img width="66%" alt="Post-processed and sanded chassis parts" src="https://github.com/user-attachments/assets/f7dcb00d-eda2-47a0-84ba-3d59ef7d9eb7" />
 </p>
-<p align="center"><em>Post-processed and sanded chassis parts, ready for assembly. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Planetary Gearbox, suspension arms, and mounts being prepared for slicing in Bambu Studio</em></p>
 
 ### Mechanical & Electrical Assembly
 
@@ -360,12 +359,12 @@ Metal fasteners and bearings are used throughout for durability. Planetary gears
 <p align="center">
   <img width="66%" alt="Wiring the Arduino Mega and motor drivers" src="https://github.com/user-attachments/assets/9be08430-5f53-49dc-adb7-1fa2a313e460" />
 </p>
-<p align="center"><em>Wiring the Arduino Mega and motor drivers. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Ultrasonic sensor</em></p>
 
 <p align="center">
   <img width="33%" alt="Raspberry Pi 4 and sensor wiring, close-up" src="https://github.com/user-attachments/assets/4979b255-1dcc-4112-aaa6-852ae7a3a988" />
 </p>
-<p align="center"><em>Raspberry Pi 4 and sensor wiring, close-up. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>IR Camera</em></p>
 
 ### Testing
 
@@ -392,10 +391,10 @@ Adjustments made over the course of testing included refining the suspension for
 <p align="center">
   <img width="66%" alt="Field test results overview" src="https://github.com/user-attachments/assets/132262a9-637f-4f6c-a8bc-bdf11408f4da" />
 </p>
-<p align="center"><em>Field test results overview. (Caption inferred from surrounding context — please verify.)</em></p>
+<p align="center"><em>Field test results overview</em></p>
 
 **Summary of results:**
-- Traversed varied rough terrain (rocky, sandy, uneven) at ground speeds up to ~17 m/s, operated at ~10 m/s for stability.
+- Traversed varied rough terrain (rocky, sandy, uneven) at ground speeds up to ~1.7 m/s, operated at ~1.0 m/s for stability.
 - Modular docking and wireless charging demonstrated between chassis and drone in field tests.
 - Real-time sensor feedback for obstacle and hazard detection, using FFT-calibrated signal processing.
 - Recognized with an Honorable Mention at OCSEF, with judge feedback centered on scope ("too ambitious") and structural bulk — directly shaping the redesign priorities below.
@@ -411,21 +410,6 @@ Many revisions were made to arrive at the final design; the major iterations are
 - **Motor box assembly (n=4 → n=5):** The final motor box iteration eliminated the snapping failure by switching to a planetary gear system, enabling a custom gear ratio while allowing for indirect mounting.
 - **Platform mount (n=3):** An intermediate platform mount design preceded the final integrated version.
 
-<p align="center">
-  <img width="33%" alt="Fig 14. Old platform mount (n=3)" src="media/fig14-old-platform-mount.jpg" />
-</p>
-<p align="center"><em>Fig 14. Old platform mount (n=3) (placeholder — source image from presentation not yet uploaded to repo).</em></p>
-
-<p align="center">
-  <img width="66%" alt="Fig 9, 12. Old suspension assembly and motor-CV connector iterations" src="media/fig9-12-old-iterations.jpg" />
-</p>
-<p align="center"><em>Fig 9 (left). Old (n=2) suspension assembly iteration that did not meet criteria. Fig 12 (right). Old (n=1) motor-CV connector iteration (placeholder — source image from presentation not yet uploaded to repo).</em></p>
-
-<p align="center">
-  <img width="66%" alt="Fig 10, 11, 13. New motor box iterations" src="media/fig10-13-new-motor-box.jpg" />
-</p>
-<p align="center"><em>Fig 10–11. New (n=4) motor box iteration. Fig 13. New (n=5) motor box assembly iteration, integrating the planetary gear system (placeholder — source images from presentation not yet uploaded to repo).</em></p>
-
 **Structural testing (qualitative, three trials per condition):**
 
 <div align="center">
@@ -439,10 +423,7 @@ Many revisions were made to arrive at the final design; the major iterations are
 
 </div>
 
-<p align="center">
-  <img width="33%" alt="Structural crack testing" src="media/fig-crack-testing.jpg" />
-</p>
-<p align="center"><em>Structural crack testing across obstacle trials (placeholder — source image from presentation not yet uploaded to repo).</em></p>
+<p align="center"><em>Structural crack testing across obstacle trials</em></p>
 
 ---
 
